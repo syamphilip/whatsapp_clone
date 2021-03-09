@@ -8,32 +8,32 @@ class UserData {
 
 List<UserData> sampleData = [
   UserData(
-      name: 'name',
-      msg: 'Hello',
+      name: 'Alexandria',
+      msg: 'Hello1',
       image: 'assets/images/0 (1).jpg',
       time: '10:45 PM'),
   UserData(
-      name: 'name',
+      name: 'William',
       msg: 'Hello',
       image: 'assets/images/0 (2).jpg',
       time: '10:45 PM'),
   UserData(
-      name: 'name',
+      name: 'Roberta',
       msg: 'Hello',
       image: 'assets/images/0 (3).jpg',
       time: '10:45 PM'),
   UserData(
-      name: 'name',
+      name: 'Ashley',
       msg: 'Hello',
       image: 'assets/images/0 (4).jpg',
       time: '10:45 PM'),
   UserData(
-      name: 'name',
+      name: 'Casey',
       msg: 'Hello1',
       image: 'assets/images/0 (5).jpg',
       time: '10:45 PM'),
   UserData(
-      name: 'name',
+      name: 'Louis',
       msg: 'Hello',
       image: 'assets/images/0 (6).jpg',
       time: '10:45 PM')

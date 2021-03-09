@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/callScreen.dart';
 import 'package:whatsapp_clone/chatScreen.dart';
+import 'package:whatsapp_clone/statusScreen.dart';
 
 void main() {
   runApp(DefaultTabController(
+    initialIndex: 1,
     length: 4,
     child: MaterialApp(
       home: WhatsAppHome(),
@@ -65,8 +68,8 @@ class _WhatsAppHomeState extends State<WhatsAppHome> {
         children: [
           Text('01'),
           ChatScreen(),
-          Text('01'),
-          Text('01'),
+          StatusScreen(),
+          CallScreen(),
         ],
       )),
     );
