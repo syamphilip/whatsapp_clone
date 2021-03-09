@@ -29,7 +29,7 @@ List<UserData> sampleData = [
       time: '10:45 PM'),
   UserData(
       name: 'name',
-      msg: 'Hello',
+      msg: 'Hello1',
       image: 'assets/images/0 (5).jpg',
       time: '10:45 PM'),
   UserData(
