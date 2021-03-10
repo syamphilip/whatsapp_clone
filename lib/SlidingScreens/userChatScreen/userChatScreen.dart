@@ -59,15 +59,87 @@ class _UserChatScreenState extends State<UserChatScreen> {
             ),
           ],
         ),
-        body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          child: Image(
-              image: NetworkImage(
-                'https://wallpapercave.com/wp/wp5149772.jpg',
+        body: Stack(
+          children: [
+            Container(
+              height: double.infinity,
+              width: double.infinity,
+              child: FittedBox(
+                child: Image.asset('assets/images/bg.jpg'),
+                fit: BoxFit.fill,
               ),
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width),
+            ),
+            Positioned(
+                bottom: MediaQuery.of(context).size.height * 0.001,
+                child: Row(
+                  children: [
+                    Container(
+                        margin: EdgeInsets.all(10.0),
+                        padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                        decoration: new BoxDecoration(
+                            borderRadius:
+                                new BorderRadius.all(new Radius.circular(25.0)),
+                            color: Colors.white),
+                        width: MediaQuery.of(context).size.width * 0.75,
+                        height: 50.0,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Icon(
+                              Icons.sentiment_very_satisfied,
+                              color: Colors.grey,
+                            ),
+                            Container(
+                              decoration: new BoxDecoration(
+                                  borderRadius: new BorderRadius.all(
+                                      new Radius.circular(25.0)),
+                                  color: Colors.white),
+                              width: MediaQuery.of(context).size.width * 0.40,
+                              height: 50.0,
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  hintText: 'Type a message',
+                                  filled: true,
+                                  fillColor: Colors.white,
+                                  contentPadding: const EdgeInsets.all(10.0),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white),
+                                    borderRadius: BorderRadius.circular(25.7),
+                                  ),
+                                  enabledBorder: UnderlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white),
+                                    borderRadius: BorderRadius.circular(25.7),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Icon(
+                              Icons.attach_file,
+                              color: Colors.grey,
+                            ),
+                            Icon(
+                              Icons.camera_alt,
+                              color: Colors.grey,
+                            ),
+                          ],
+                        )),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.07,
+                      width: MediaQuery.of(context).size.height * 0.09,
+                      decoration: BoxDecoration(
+                        color: Color(0xff075E54),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.mic,
+                          color: Colors.white,
+                        ),
+                      ),
+                    )
+                  ],
+                ))
+          ],
         ));
   }
 }
