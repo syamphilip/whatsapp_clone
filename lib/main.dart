@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/callScreen.dart';
-import 'package:whatsapp_clone/chatScreen.dart';
-import 'package:whatsapp_clone/statusScreen.dart';
+import 'package:whatsapp_clone/SlidingScreens/callScreen.dart';
+import 'package:whatsapp_clone/SlidingScreens/chatScreen.dart';
+import 'package:whatsapp_clone/SlidingScreens/statusScreen.dart';
 
 void main() {
   runApp(DefaultTabController(
